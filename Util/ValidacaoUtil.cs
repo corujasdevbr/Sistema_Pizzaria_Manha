@@ -32,5 +32,18 @@ namespace Senai.OO.Pizzaria.MVC.Util
 
             return false;
         }
+
+        /// <summary>
+        /// Valida a Categoria do Produto
+        /// </summary>
+        /// <param name="categoria">Categoria do produto(pizza/bebida)</param>
+        /// <returns>Retorna true se categoria for pizza/bebida ou false caso contrário</returns>
+        public static bool ValidarCategoria(string categoria){
+            if(categoria.ToLower() == "pizza" || categoria.ToLower() == "bebida"){
+                return true;
+            }
+
+            return false;
+        }
     }
 }
